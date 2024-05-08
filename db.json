@@ -1,0 +1,94 @@
+{
+  "students": [
+    {
+      "marks": {
+        "English": "98",
+        "Maths": "97",
+        "Physics": "98"
+      },
+      "Name": "Umair",
+      "Last": "Naeem",
+      "id": "1"
+    },
+    {
+      "marks": {
+        "English": "63",
+        "Maths": "86",
+        "Physics": "99"
+      },
+      "Name": "Hafiz",
+      "Last": "Usman",
+      "id": "2"
+    },
+    {
+      "marks": {
+        "English": "83",
+        "Maths": "69",
+        "Physics": "79"
+      },
+      "Name": "Rohan",
+      "Last": "Rajput",
+      "id": "3"
+    },
+    {
+      "marks": {
+        "English": "30",
+        "Maths": "65",
+        "Physics": "45"
+      },
+      "Name": "Hassan",
+      "Last": "Ali",
+      "id": "4"
+    },
+    {
+      "marks": {
+        "English": "88",
+        "Maths": "55",
+        "Physics": "77"
+      },
+      "Name": "Hafiz",
+      "Last": "Wahab",
+      "id": "8"
+    },
+    {
+      "marks": {
+        "English": "99",
+        "Maths": "55",
+        "Physics": "77"
+      },
+      "Name": "Hafiz",
+      "Last": "Wahab",
+      "id": "9"
+    },
+    {
+      "marks": {
+        "English": "99",
+        "Maths": "67",
+        "Physics": "77"
+      },
+      "Name": "Hafiz",
+      "Last": "Wahab",
+      "id": "10"
+    },
+    {
+      "marks": {
+        "English": "55",
+        "Maths": "88",
+        "Physics": "87"
+      },
+      "Name": "Rohan",
+      "Last": "Rajput",
+      "id": "65"
+    },
+    {
+      "marks": {
+        "English": "98",
+        "Maths": "55",
+        "Physics": "60"
+      },
+      "Name": "Umair",
+      "Last": "Rajput",
+      "id": "14"
+    }
+  ]
+}

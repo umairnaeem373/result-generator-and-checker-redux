@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useSelector , useDispatch  } from 'react-redux';
+import { addStudent } from "./Actioms/Actions"
+import { useNavigate } from 'react-router-dom';
+import { Routes , Route } from 'react-router-dom';
+import Home from './Components/Home';
+import AdminLogin from './Components/AdminLogin';
+import AdminPage from './Components/AdminPage';
+import StudentLogin from './Components/StudentLogin';
+import ResultPage from './Components/ResultPage';
+import NewSudent from './Components/NewSudent';
+import EditResult from './Components/EditResult';
+import EditPage from './Components/EditPage';
 
 function App() {
+  
+  const navigate=useNavigate()
+
+  const State=useSelector((st)=>st.createData)
+
+  const dispatch=useDispatch()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="w-3/4 flex flex-wrap justify-center my-[100px] mx-auto">
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/adminLogin' element={<AdminLogin/>}/>
+        <Route path='/studentLogin' element={<StudentLogin/>}/>
+        <Route path='//resultPage' element={<ResultPage/>}/>
+        <Route path='/admin' element={<AdminPage/>}/>
+        <Route path='/addResult' element={<NewSudent/>}/>
+        <Route path='/editResult' element={<EditResult/>}/>
+        <Route path='/editPage/:ParamId' element={<EditPage/>}/>
+      </Routes>
     </div>
   );
 }
