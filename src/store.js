@@ -3,7 +3,7 @@ import { applyMiddleware } from "redux";
 import { combineReducers } from "redux";
 import { createStore } from "redux";
 import { CreateData, Result } from "./Actioms/Reducers";
-import { loadData } from "./Actioms/Actions";
+
 
 const Reducers=combineReducers({
     createData: CreateData,

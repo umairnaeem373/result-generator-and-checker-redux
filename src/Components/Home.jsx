@@ -5,7 +5,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className="border py-16 w-2/4">
+    <div className="border rounded-xl shadow-xl py-16 w-2/4">
       <h1 className="text-4xl  text-center font-bold w-full">
         Gradebook Portal
       </h1>
