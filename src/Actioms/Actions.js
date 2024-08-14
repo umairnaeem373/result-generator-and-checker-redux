@@ -30,12 +30,9 @@ export const getResult=(id)=> async (dispatch)=>{
 }
 
 export const updateData=(id,data)=> async (dispatch)=>{
-    console.log(id,data,'la casa de data');
     try {
-
     const res= await axios.put(`https://json-api-wsnl.onrender.com/students/${id}`,data)
     dispatch({type:"UPDATE_DATA" , payload:res.data })
-
     } catch (error) {
         console.log(error);
     }

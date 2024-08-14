@@ -14,7 +14,7 @@ export const CreateData=(state={},action)=>{
           return {
             ...state,
             students: state.students.map((student) =>
-              student.id === action.paylod.id ? action.payload : student
+              student.id === action.payload.id ? action.payload : student
             ),
           };
             

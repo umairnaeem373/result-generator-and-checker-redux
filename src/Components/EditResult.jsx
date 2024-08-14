@@ -12,7 +12,7 @@ function EditResult() {
 
   React.useEffect(() => {
     dispatch(loadData());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
