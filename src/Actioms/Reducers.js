@@ -11,7 +11,12 @@ export const CreateData=(state={},action)=>{
             return{...state,students:[...state.students,action.payload]}
 
         case "UPDATE_DATA":
-         return{...state,students:[...state.students,action.payload]}
+          return {
+            ...state,
+            students: state.students.map((student) =>
+              student.id === action.paylod.id ? action.payload : student
+            ),
+          };
             
         case "ADDING_ERROR":
             alert('Student may already exist with this Student ID')

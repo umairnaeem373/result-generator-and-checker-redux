@@ -21,23 +21,23 @@ function EditResult() {
         {data.loading === true ? (
           <h1>Loading...</h1>
         ) : data.loading === false && data.students.length > 1 ? (
-          <div class="relative my-5 overflow-x-auto shadow-md sm:rounded-lg">
-            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-              <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <div className="relative my-5 overflow-x-auto shadow-md sm:rounded-lg">
+            <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+              <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
-                  <th scope="col" class="px-6 py-3">
+                  <th scope="col" className="px-6 py-3">
                     Roll no.
                   </th>
-                  <th scope="col" class="px-6 py-3">
+                  <th scope="col" className="px-6 py-3">
                     Name
                   </th>
-                  <th scope="col" class="px-6 py-3">
+                  <th scope="col" className="px-6 py-3">
                     Last Name
                   </th>
-                  <th scope="col" class="px-6 py-3">
+                  <th scope="col" className="px-6 py-3">
                     Marks
                   </th>
-                  <th scope="col" class="px-6 py-3">
+                  <th scope="col" className="px-6 py-3">
                     Action
                   </th>
                 </tr>
@@ -45,23 +45,23 @@ function EditResult() {
               {data?.students?.map(({Name , Last , marks , id}, index) => {
                 return (
                   <tbody key={index}>
-                    <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                    <tr className="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
                       <th
                         scope="row"
-                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+                        className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
                       >
                         {id}
                       </th>
-                      <td class="px-6 py-4">{Name}</td>
-                      <td class="px-6 py-4">{Last}</td>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">{Name}</td>
+                      <td className="px-6 py-4">{Last}</td>
+                      <td className="px-6 py-4">
                         {Object.values(marks).reduce(
                           (prev, current) => +prev + +current
                         )}
                       </td>
-                      <td class="px-6 py-4">
+                      <td className="px-6 py-4">
                         <button
-                          class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
+                          className="font-medium text-blue-600 dark:text-blue-500 hover:underline"
                           onClick={() => navigate(`/editpage/${id}`)}
                         >
                           Edit
