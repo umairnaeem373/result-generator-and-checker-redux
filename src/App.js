@@ -1,6 +1,4 @@
-import { useSelector , useDispatch  } from 'react-redux';
-import { addStudent } from "./Actioms/Actions"
-import { useNavigate } from 'react-router-dom';
+
 import { Routes , Route } from 'react-router-dom';
 import Home from './Components/Home';
 import AdminLogin from './Components/AdminLogin';
@@ -12,12 +10,7 @@ import EditResult from './Components/EditResult';
 import EditPage from './Components/EditPage';
 
 function App() {
-  
-  const navigate=useNavigate()
 
-  const State=useSelector((st)=>st.createData)
-
-  const dispatch=useDispatch()
 
   return (
     <div className="w-3/4 flex flex-wrap justify-center my-[100px] mx-auto">
@@ -25,7 +18,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/adminLogin' element={<AdminLogin/>}/>
         <Route path='/studentLogin' element={<StudentLogin/>}/>
-        <Route path='//resultPage' element={<ResultPage/>}/>
+        <Route path='/resultPage' element={<ResultPage/>}/>
         <Route path='/admin' element={<AdminPage/>}/>
         <Route path='/addResult' element={<NewSudent/>}/>
         <Route path='/editResult' element={<EditResult/>}/>
